@@ -1,0 +1,11 @@
+.Todo-items {
+    font-size: 20px;
+}
+
+.Todo-items img{
+    cursor: pointer;
+}
+.Todo-items-complete > p {
+    text-decoration: line-through;
+    opacity: 0.3;
+}

@@ -1,9 +1,12 @@
 .App {
-  text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #888;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -13,7 +16,28 @@
   }
 }
 
-.App-header {
+
+.App .Header {
+  display: flex;
+  padding-left: 5px;
+}
+
+.App .Header  img {
+  width: 30px;
+  color: #4ad295;
+}
+
+.App .Header input{
+  width: 100%;
+  border: none;
+  padding: 10px 0 10px 20px;
+  font-size: 26px;
+}
+
+.App .Header input:focus {
+  outline: none;
+}
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,7 +46,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -35,4 +59,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.Todo-items {
+  color: #333;
+  font-weight: 400;
+  display: flex;
+  padding: 0 5px;
+  border-bottom: 1px solid rgb(155, 154, 154);
+}
+
+.Todo-items > p{
+  margin: 0;
+  padding: 10px 5px 10px 20px;
+  font-size: 26px;
+  flex: 1;
+
+}
+
+.Todo-items:last-chil {
+  border-bottom: none;
+}
+
+.Todo-items > img{
+  width: 30px;
+}
+
+.Todo-items > img#clear{
+  width: 20px;
 }
